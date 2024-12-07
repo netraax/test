@@ -1,19 +1,8 @@
 [build]
-  publish = "dist"
   command = "npm run build"
-
-[build.environment]
-  NODE_VERSION = "18"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[dev]
-  framework = "#custom"
-  command = "npm run start"
-  targetPort = 1234
-  port = 8888
-  publish = "dist"
-  autoLaunch = true
