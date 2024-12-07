@@ -1,5 +1,5 @@
 {
-  "name": "vintedgoat",
+  "name": "testgoat",
   "version": "1.0.0",
   "description": "Outil d'analyse pour boutiques Vinted",
   "main": "src/app.js",
@@ -19,24 +19,3 @@
     "jest": "^27.0.0"
   }
 }
-
-</antArtifact><antArtifact identifier="netlify-toml" type="application/vnd.ant.code" language="toml" title="netlify.toml">
-[build]
-  publish = "dist"
-  command = "npm run build"
-
-[build.environment]
-  NODE_VERSION = "18"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[dev]
-  framework = "#custom"
-  command = "npm run start"
-  targetPort = 1234
-  port = 8888
-  publish = "dist"
-  autoLaunch = true
